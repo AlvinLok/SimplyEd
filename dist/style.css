@@ -1,0 +1,66 @@
+:root {
+    --color_0: 255,255,255;
+    --color_1: 13,84,148;
+    --color_2: 252,148,6;
+    --color_3: 17,111,195;
+    --color_4: 236,244,244;
+    --color_5: 252,232,200;
+    --color_6: 255,255,255;
+    --color_7: 175,213,248;
+    --color_8: 95,172,241;
+    --color_9: 20,130,228;
+    --color_10: 13,84,148;
+    --color_11: 255,255,255;
+    --color_12: 175,213,248;
+    --color_13: 95,172,241;
+    --color_14: 20,130,228;
+    --color_15: 13,84,148;
+    --color_16: 254,219,172;
+    --color_17: 253,184,89;
+    --color_18: 252,148,6;
+    --color_19: 170,99,2;
+    --color_20: 85,49,1;
+    --color_21: 200,227,250;
+    --color_22: 145,198,245;
+    --color_23: 91,170,241;
+    --color_24: 36,141,236;
+    --color_25: 17,111,195;
+    --color_26: 245,250,250;
+    --color_27: 236,244,244;
+    --color_28: 160,200,200;
+    --color_29: 88,152,152;
+    --color_30: 44,76,76;
+    --color_31: 253,243,228;
+    --color_32: 252,232,200;
+    --color_33: 246,187,93;
+    --color_34: 214,136,12;
+    --color_35: 107,68,6;
+    --font_0: normal normal normal 22px/1.41em raleway,sans-serif;
+    --font_1: normal normal normal 14px/1.79em avenir-lt-w01_35-light1475496,avenir-lt-w05_35-light,sans-serif;
+    --font_2: normal normal normal 28px/1.375em raleway,sans-serif;
+    --font_3: normal normal normal 88px/1.2em raleway,sans-serif;
+    --font_4: normal normal normal 72px/1.25em raleway,sans-serif;
+    --font_5: normal normal normal 50px/1.34em raleway,sans-serif;
+    --font_6: normal normal normal 40px/1.35em raleway,sans-serif;
+    --font_7: normal normal normal 20px/1.67em avenir-lt-w01_35-light1475496,avenir-lt-w05_35-light,sans-serif;
+    --font_8: normal normal normal 18px/1.75em avenir-lt-w01_35-light1475496,avenir-lt-w05_35-light,sans-serif;
+    --font_9: normal normal normal 15px/1.875em avenir-lt-w01_35-light1475496,avenir-lt-w05_35-light,sans-serif;
+    --font_10: normal normal normal 14px/1.79em avenir-lt-w01_35-light1475496,avenir-lt-w05_35-light,sans-serif;
+    --wix-ads-height: 50px;
+    --wix-ads-top-height: 50px;
+    --site-width: 980px;
+    --above-all-z-index: 100000;
+    --portals-z-index: 100001;
+    --minViewportSize: 320;
+    --maxViewportSize: 1920;
+}
+
+.title-page-text {
+    
+    font: var(--font_5);
+    color: rgb(var(--color_18));
+
+}
+
+
+    
