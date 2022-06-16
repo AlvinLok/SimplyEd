@@ -55,12 +55,24 @@
     --maxViewportSize: 1920;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .title-page-text {
     
     font: var(--font_5);
     color: rgb(var(--color_18));
+    text-align: center;
 
 }
 
-
+#loginbtn {
+    border: 2px solid rgb(var(--color_18));
+    border-radius: 5px;
+    width: 200px;
+    height: 36px;
+}
     
