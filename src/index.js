@@ -6,6 +6,7 @@ import {
   GoogleAuthProvider,
   signInWithPopup,
   signOut,
+  FacebookAuthProvider,
 } from 'firebase/auth';
 import {
   getFirestore,
@@ -31,30 +32,41 @@ import { getPerformance } from 'firebase/performance';
 
 import { getFirebaseConfig } from './firebase-config.js';
 
-const signInButtonElement = document.querySelector('#loginbtn');
+const googleSignInButton = document.querySelector('#googlelogin');
+const facebookSignInButton = document.querySelector('#fblogin');
 const userPicElement = document.querySelector('#user-img');
 const userNameElement = document.querySelector('#user-name');
 const signOutButtonElement = document.querySelector('#logout');
 
-signInButtonElement.addEventListener('click', () => {
-    console.log('clicked sign-in btn');
-    signIn();
+googleSignInButton.addEventListener('click', () => {
+  console.log('google login clicked');
+  googleSignIn();
+});
+
+facebookSignInButton.addEventListener('click', () => {
+  console.log('fb login clicked');
+  facebookSignIn();
 });
 
 signOutButtonElement.addEventListener('click', () => {
   console.log('sign-out btn clicked!');
   signOutUser();
-})
+});
 
 const firebaseAppConfig = getFirebaseConfig();
 initializeApp(firebaseAppConfig);
 
 // Signs-in to SimplyEd
-async function signIn() {
-    // Sign in Firebase using popup auth and Google as the identity provider.
-    var provider = new GoogleAuthProvider();
-    await signInWithPopup(getAuth(), provider);
-  }
+async function googleSignIn() {
+  // Sign in Firebase using popup auth and Google as the identity provider.
+  var googleProvider = new GoogleAuthProvider();
+  await signInWithPopup(getAuth(), googleProvider);
+}
+
+async function facebookSignIn() {
+  var facebookProvider = new FacebookAuthProvider();
+  await signInWithPopup(getAuth(), facebookProvider);
+}
 
 // Signs-out of SimplyEd
 function signOutUser() {
@@ -70,7 +82,9 @@ function initFirebaseAuth() {
 
 // Returns the signed-in user's profile Pic URL.
 function getProfilePicUrl() {
-  return getAuth().currentUser.photoURL || '/dist/images/profile_placeholder.png'
+  return (
+    getAuth().currentUser.photoURL || '/dist/images/profile_placeholder.png'
+  );
 }
 
 // Returns the signed-in user's display name.
@@ -100,7 +114,7 @@ function authStateObserver(user) {
     signOutButtonElement.removeAttribute('hidden');
 
     // Hide sign-in button.
-    signInButtonElement.setAttribute('hidden', 'true');
+    googleSignInButton.setAttribute('hidden', 'true');
   } else {
     // User is signed out!
     // Hide user's profile and sign-out button.
@@ -109,7 +123,7 @@ function authStateObserver(user) {
     signOutButtonElement.setAttribute('hidden', 'true');
 
     // Show sign-in button.
-    signInButtonElement.removeAttribute('hidden');
+    googleSignInButton.removeAttribute('hidden');
   }
 }
 
@@ -122,4 +136,4 @@ function addSizeToGoogleProfilePic(url) {
 }
 
 initFirebaseAuth();
-console.log('hello from index.js')
+console.log('hello from index.js');
