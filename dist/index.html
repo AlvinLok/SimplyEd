@@ -6,19 +6,35 @@
     <title>SimplyEd</title>
     <link href="./style.css" type="text/css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
 </head>
 <body>
+    <div id="nav-placeholder">
 
-    <!-- <div id="nav"></div>
+    </div>
+
     <script>
-        window.onload = function(){
-            $.get("nav.html", function(data){
-                $("#include").html(data);
-            })
-        }
-    </script> -->
+        $(function(){
+            $("#nav-placeholder").load("nav.html");
+        });
+    </script>
 
-    <header>
+
+
+    <!-- <script id="replace_with_navbar" src="nav.js"></script> -->
+
+    <!-- <div id="nav-placeholder">
+
+    </div> -->
+    
+    <!-- <script>
+        $.get("./nav.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+        });
+        </script> -->
+
+    <!-- <header>
         <img src="../assets/images/logo.webp" class="logo" href="./index.html">    
         <span class="log_in">
             Log In
@@ -36,7 +52,7 @@
             </ul>
         </nav>
     </span>
-    
+     -->
 
     <h1 class="title-page-text">EASILY SHARE LESSON PLANS ACROSS YOUR SCHOOL, CITY, AND DISTRICT FOR <b>FREE</b> </h1></h1></p><p class="title-page-bold"> </p>
     <p class="subtitle">Get inspiration from anywhere in the world!</p>

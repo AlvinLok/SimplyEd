@@ -8,22 +8,15 @@
 </head>
 
 <body>
-    <img src="../assets/logo.webp" class="logo">
-    
-    <nav class="nav">
-        <ul>
-            <a href="#home">Home</a>
-            <a href="#lesson_plans">Lesson Plans</a>
-            <a href="#faq">FAQ</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-        </ul>
-    </nav>
+    <div id="nav-placeholder">
 
-    
-    <span class="log_in">
-        Log In
-    </span>
+    </div>
+
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("nav.html");
+        });
+    </script>
 
     <p>FAQ</p>
 </body>
