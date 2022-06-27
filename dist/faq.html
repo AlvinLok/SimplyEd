@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SimplyEd</title>
     <link href="./style.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
 </head>
 
 <body>
@@ -18,5 +21,40 @@
         });
     </script>
 
-    <p>FAQ</p>
+    <div>
+
+    </div>    
+    
+    <div >
+        <ul class="faq">
+            <li>How much does this cost?
+                <ul class="faq-answer">
+                    Its free for life!
+                </ul>
+            </li>
+            <li>Does this protect my data?
+                <ul class="faq-answer">
+                    All of your personal data and the material you upload is stored in Canadian servers
+                </ul>
+            </li>
+            <li>I saw something offensive. How do I report it?
+                <ul class="faq-answer">
+                    Each posted resource has an option to report it for harmful and offensive content. Flagged posts will be reviewed by our team and reasons will be provided after a decision is made.
+                </ul>
+            </li>
+        </ul>
+        
+    </div>
+    
+    <div id="footer-placeholder">
+
+    </div>
+
+    <script>
+        $(function(){
+            $("#footer-placeholder").load("footer.html");
+        });
+    </script>
+    
+
 </body>

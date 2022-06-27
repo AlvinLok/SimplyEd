@@ -14,6 +14,15 @@
             "url": "http://localhost:8080",
             "webRoot": "${workspaceFolder}",
             "file": "${workspaceFolder}/dist/index.html"
+        },
+
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Launch Python HTTP against localhost",
+            "url": "http://localhost:8000",
+            "webRoot": "${workspaceFolder}",
+            "file": "${workspaceFolder}/dist/index.html"
         }
     ]
 }

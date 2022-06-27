@@ -53,6 +53,13 @@
     --portals-z-index: 100001;
     --minViewportSize: 320;
     --maxViewportSize: 1920;
+
+
+    --stroke-width: 0;
+    --fill-opacity: 1;
+    --stroke: #0D5494;
+    --stroke-opacity: 1;
+    --fill: #0D5494;
 }
 
 a:link {text-decoration:none;}
@@ -63,7 +70,7 @@ a {
 a:hover {text-decoration:underline;}
 a:active {text-decoration:underline;}
 
-.title-page-text {
+#title-page-text {
     
     font: var(--font_5);
     color: rgb(var(--color_18));
@@ -119,7 +126,6 @@ a:active {text-decoration:underline;}
     text-decoration: none;
     color: rgb(var(--txts,var(--color_15)));
 
-    position: relative; 
     box-sizing: border-box; 
     overflow: visible; 
     visibility: inherit;
@@ -134,6 +140,40 @@ a:active {text-decoration:underline;}
 }
 
 .footer {
-    width: 20px; height: 20px; object-fit: cover
+    width: 20px; 
+    height: 20px; 
+    object-fit: cover
+}
+
+.faq {
+    font: var(--font_0);
+    color: rgb(var(--color_18));
+    list-style-type:none;
+    letter-spacing: 0em;
+    line-height: 1.41em;
+    text-align: left;
+    font-size: 22px;
+
+}
+
+.faq-answer {
+    color: rgb(var(--color_15));
+    font: var(--font_9);
+    color: rgb(var(--color_15));
+    letter-spacing: 0em;
+}
+
+.owner-profile h1 {
+    display: flex;
+    font: var(--font_3);
+    color: rgb(var(--color_11));
+    letter-spacing: 0em;
+    width: 446px;
+    height: 602px;
+    background-color: var(--fill);
+    fill-opacity: var(--fill-opacity);
+    stroke: var(--stroke);
+    stroke-opacity: var(--stroke-opacity);
+    stroke-width: var(--stroke-width);
 }
     
