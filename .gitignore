@@ -67,6 +67,5 @@ node_modules/
 
 ./node_modules/
 .dist/bundle.js
+./package-lock.json/
 .DS_Store
-package-lock.json
-package.json
