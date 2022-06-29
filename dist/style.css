@@ -53,15 +53,24 @@
     --portals-z-index: 100001;
     --minViewportSize: 320;
     --maxViewportSize: 1920;
+
+
+    --stroke-width: 0;
+    --fill-opacity: 1;
+    --stroke: #0D5494;
+    --stroke-opacity: 1;
+    --fill: #0D5494;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a {
+    color: inherit;
 }
+a:hover {text-decoration:underline;}
+a:active {text-decoration:underline;}
 
-.title-page-text {
+#title-page-text {
     
     font: var(--font_5);
     color: rgb(var(--color_18));
@@ -74,5 +83,105 @@ body {
     border-radius: 5px;
     width: 200px;
     height: 36px;
+
+.logo {
+    width: 146px; 
+    height: 40px; 
+    object-fit: contain; 
+    object-position: center center
+}
+
+.log_in {
+
+    flex-shrink: 0;
+    padding-left: 7px;
+    padding-right: 7px;
+    fill: rgba(var(--fillcolor,var(--color_0)),var(--alpha-fillcolor,1));
+    fill-opacity: var(--alpha-fillcolor);
+    position: inherit;
+    width: var(--icon-size,26px);
+    height: var(--icon-size,26px);
+    border-radius: var(--rd,0);
+    font: var(--fnt,var(--font_8));
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    padding: 6px 7px;
+    position: relative;
+    min-width: 0;
+    color: rgb(var(--txt,var(--color_18)));
+    
+}
+
+.nav {
+    
+    text-align:center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    position: relative; 
+    cursor: pointer;
+    font: var(--fnt,var(--font_1));
+    border-top: 1px solid rgba(var(--brd,var(--color_15)),var(--alpha-brd,1));
+    text-align: center; 
+    line-height: 30px;
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(var(--txts,var(--color_15)));
+
+    box-sizing: border-box; 
+    overflow: visible; 
+    visibility: inherit;
+    
+}
+
+.subtitle {
+    font-weight:bold;
+    color: rgb(var(--color_15));
+    font: var(--font_8);
+    height: auto;
+}
+
+.footer {
+    width: 20px; 
+    height: 20px; 
+    object-fit: cover
+}
+
+.faq {
+    font: var(--font_0);
+    color: rgb(var(--color_18));
+    list-style-type:none;
+    letter-spacing: 0em;
+    line-height: 1.41em;
+    text-align: left;
+    font-size: 22px;
+
+}
+
+.faq-answer {
+    color: rgb(var(--color_15));
+    font: var(--font_9);
+    color: rgb(var(--color_15));
+    letter-spacing: 0em;
+}
+
+.owner-profile h1 {
+    display: flex;
+    font: var(--font_3);
+    color: rgb(var(--color_11));
+    letter-spacing: 0em;
+    width: 446px;
+    height: 602px;
+    background-color: var(--fill);
+    fill-opacity: var(--fill-opacity);
+    stroke: var(--stroke);
+    stroke-opacity: var(--stroke-opacity);
+    stroke-width: var(--stroke-width);
+
 }
     
