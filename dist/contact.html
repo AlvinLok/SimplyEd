@@ -18,7 +18,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"
     />
-    <link rel="stylesheet" href="style-contact.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
@@ -76,10 +76,17 @@
     <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
     <script src="contact-form.js"></script>
 
-    <section class="owner-profile">
-      <h1>Alvin Lok</h1>
-    </section>
+    <div id="footer-placeholder">
 
-    <section class="owner-profile">Lynne Shi</section>
+    </div>
+
+    <script>
+      $(function(){
+          $("#footer-placeholder").load("footer.html");
+      });
+    </script>
+
+    
+
   </body>
 </html>
