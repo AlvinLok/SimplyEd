@@ -149,22 +149,22 @@ a:active {text-decoration:underline;}
 }
 
 .footer-row {
-
     display: flex;
-    width: 100%;
     justify-content: center;
-    text-align: center;
-    
 }
 
 .footer-column {
     width: 20px; 
     height: 20px; 
     padding: 5px;
-    flex: 5%
+    flex: 5%;
 }
 
-
+.footer-image {
+  margin: 10px;
+  width: 20px; 
+  height: 20px
+}
 
 .faq {
     font: var(--font_0);
@@ -174,14 +174,16 @@ a:active {text-decoration:underline;}
     line-height: 1.41em;
     text-align: left;
     font-size: 22px;
-
 }
 
-.faq-answer {
+.normal-text {
     color: rgb(var(--color_15));
-    font: var(--font_9);
+    font: var(--font_8);
     color: rgb(var(--color_15));
     letter-spacing: 0em;
+    font-size: 16px;
+    line-height:1.8em;
+    font-weight: lighter;
 }
 
 .owner-profile h1 {
@@ -196,8 +198,33 @@ a:active {text-decoration:underline;}
     stroke: var(--stroke);
     stroke-opacity: var(--stroke-opacity);
     stroke-width: var(--stroke-width);
-
 }
+
+h4 {
+  
+  font: var(--font_2);
+  color: rgb(var(--color_15));
+  letter-spacing: 0em;
+  font-size:38px;
+}
+
+.white {
+  color: white;
+}
+
+.container2 {
+  display: flex;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.over-image {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
 
 * {
     box-sizing: border-box;
