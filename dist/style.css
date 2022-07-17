@@ -74,8 +74,17 @@ a:active {text-decoration:underline;}
     
     font: var(--font_5);
     color: rgb(var(--color_18));
+    text-align: center;
 
 }
+
+#loginbtn {
+    border: 2px solid rgb(var(--color_18));
+    border-radius: 5px;
+    width: 200px;
+    height: 36px;
+
+    }
 
 .logo {
     width: 146px; 
@@ -139,10 +148,22 @@ a:active {text-decoration:underline;}
     height: auto;
 }
 
-.footer {
+.footer-row {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-column {
     width: 20px; 
     height: 20px; 
-    object-fit: cover
+    padding: 5px;
+    flex: 5%;
+}
+
+.footer-image {
+  margin: 10px;
+  width: 20px; 
+  height: 20px
 }
 
 .faq {
@@ -153,14 +174,16 @@ a:active {text-decoration:underline;}
     line-height: 1.41em;
     text-align: left;
     font-size: 22px;
-
 }
 
-.faq-answer {
+.normal-text {
     color: rgb(var(--color_15));
-    font: var(--font_9);
+    font: var(--font_8);
     color: rgb(var(--color_15));
     letter-spacing: 0em;
+    font-size: 16px;
+    line-height:1.8em;
+    font-weight: lighter;
 }
 
 .owner-profile h1 {
@@ -176,4 +199,149 @@ a:active {text-decoration:underline;}
     stroke-opacity: var(--stroke-opacity);
     stroke-width: var(--stroke-width);
 }
+
+h4 {
+  
+  font: var(--font_2);
+  color: rgb(var(--color_15));
+  letter-spacing: 0em;
+  font-size:38px;
+}
+
+.white {
+  color: white;
+}
+
+.container2 {
+  display: flex;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.over-image {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .container {
+    background: #fc9406;
+    color: #485e74;
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .brand {
+    text-align: center;
+  }
+  
+  .brand span {
+    color: #fff;
+  }
+  
+  .wrapper {
+    box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+  }
+  
+  .wrapper > * {
+    padding: 1em;
+  }
+  
+  .company-info {
+    background: #c9e6ff;
+  }
+  
+  .company-info h3,
+  .company-info ul {
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+  
+  .contact {
+    background: #f9feff;
+  }
+  
+  /* FORM STYLES */
+  .contact form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  
+  .contact form label {
+    display: block;
+  }
+  
+  .contact form p {
+    margin: 0;
+  }
+  
+  .contact form .full {
+    grid-column: 1 / 3;
+  }
+  
+  .contact form button,
+  .contact form input,
+  .contact form textarea {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #fc9406;
+  }
+  
+  .contact form button {
+    background: #fc9406;
+    border: 0;
+    text-transform: uppercase;
+  }
+  
+  .contact form button:hover,
+  .contact form button:focus {
+    background: #92bde7;
+    color: #fff;
+    outline: 0;
+    transition: background-color 2s ease-out;
+  }
+  
+  .alert {
+    text-align: center;
+    padding: 10px;
+    background: #79c879;
+    color: #fff;
+    margin-bottom: 10px;
+    display: none;
+  }
+  
+  /* LARGE SCREENS */
+  @media (min-width: 700px) {
+    .wrapper {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+  
+    .wrapper > * {
+      padding: 2em;
+    }
+  
+    .company-info h3,
+    .company-info ul,
+    .brand {
+      text-align: left;
+    }
+  }
+  
     

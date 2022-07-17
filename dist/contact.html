@@ -1,37 +1,92 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SimplyEd</title>
-    <link href="./style.css" type="text/css" rel="stylesheet">
+    <link href="./style.css" type="text/css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://code.jquery.com/jquery.min.js"></script>
-</head>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-    <div id="nav-placeholder">
+  <body>
+    <div id="nav-placeholder"></div>
+
+    <script>
+      $(function () {
+        $('#nav-placeholder').load('nav.html');
+      });
+    </script>
+
+    <div class="container">
+      <h1 class="brand"><span>SimplyEd</span> Contact Us</h1>
+      <div class="wrapper">
+        <div class="company-info">
+          <h3>SimplyEd</h3>
+          <ul>
+            <li><i class="fa fa-road"></i> Vancouver, BC V6T 1Z4</li>
+            <li><i class="fa fa-phone"></i> (777) 888-9999</li>
+            <li><i class="fa fa-envelope"></i> simply@ed.ca</li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h3>Email Us</h3>
+          <div class="alert">Your message has been sent</div>
+          <form id="contactForm">
+            <p>
+              <label>Name</label>
+              <input type="text" name="name" id="name" required />
+            </p>
+            <p>
+              <label>Company</label>
+              <input type="text" name="company" id="company" />
+            </p>
+            <p>
+              <label>Email Address</label>
+              <input type="email" name="email" id="email" required />
+            </p>
+            <p>
+              <label>Phone Number</label>
+              <input type="text" name="phone" id="phone" />
+            </p>
+            <p class="full">
+              <label>Message</label>
+              <textarea name="message" rows="5" id="message"></textarea>
+            </p>
+            <p class="full">
+              <button type="submit">Submit</button>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="contact-form.js"></script>
+
+    <div id="footer-placeholder">
 
     </div>
 
     <script>
-        $(function(){
-            $("#nav-placeholder").load("nav.html");
-        });
+      $(function(){
+          $("#footer-placeholder").load("footer.html");
+      });
     </script>
-
-    <section class="owner-profile">
-        <h1>Alvin Lok</h1>
-        
-    </section>
-
-    <section class="owner-profile">
-        Lynne Shi
-    </section>
 
     
 
-
-
-</body>
+  </body>
+</html>
